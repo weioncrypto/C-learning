@@ -30,6 +30,9 @@ struct ListNode* reverseList(struct ListNode* head){
     return ret;
 }
 
+
+
+
 // Solution 2
 struct ListNode* reverseList(struct ListNode* head){
     if(!head)return NULL;
