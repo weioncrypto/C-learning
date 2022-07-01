@@ -1,3 +1,3 @@
 ### LeetCode
 
-#### This is for some ideas and cool algorithm.
+#### The space is for some ideas and cool algorithm.
