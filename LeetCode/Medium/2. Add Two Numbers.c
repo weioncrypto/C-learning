@@ -1,3 +1,7 @@
+/*
+Runtime: 15 ms, faster than 81.59% of C online submissions for Add Two Numbers.
+Memory Usage: 8 MB, less than 6.71% of C online submissions for Add Two Numbers.
+*/
 #define MAX(a, b) ((a) > (b) ? (a) : (b))
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2){
     int ret[102] = {0};
