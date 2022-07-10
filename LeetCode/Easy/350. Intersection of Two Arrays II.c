@@ -31,3 +31,40 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
     *returnSize = count;
     return ret;
 }
+
+
+
+
+/*
+先將兩矩陣進行sort
+再使用double pointer依次遍歷
+若值相等則動態分配記憶體並儲存
+*/
+static int _cmp(void *a,void *b){
+    return *(int *)a - *(int *)b;
+}
+
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
+int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize){
+    qsort(nums1,nums1Size,sizeof(int),_cmp);
+    qsort(nums2,nums2Size,sizeof(int),_cmp);
+    int p1 = 0, p2 = 0, count=0;
+    int* ret = (int*)malloc(sizeof(int));
+
+    while (p1 < nums1Size && p2 < nums2Size)
+    {
+        if(nums1[p1] == nums2[p2]){
+            ret = realloc(ret,sizeof(int)*(count+1));
+            ret[count] = nums1[p1];
+            p1++;
+            p2++;
+            count++;
+        }else if(nums1[p1] > nums2[p2]){
+            p2++;
+        }else p1++;
+    }
+
+    *returnSize = count;
+    return ret;
+    
+}
