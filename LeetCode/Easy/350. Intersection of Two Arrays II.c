@@ -39,6 +39,9 @@ int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* return
 先將兩矩陣進行sort
 再使用double pointer依次遍歷
 若值相等則動態分配記憶體並儲存
+
+Runtime: 3 ms, faster than 95.17% of C online submissions for Intersection of Two Arrays II.
+Memory Usage: 7.9 MB, less than 6.69% of C online submissions for Intersection of Two Arrays II.
 */
 static int _cmp(void *a,void *b){
     return *(int *)a - *(int *)b;
