@@ -1,6 +1,9 @@
 /*
 使用矩陣記下所有出現過的值
 再遍歷矩陣抓出有交集的值
+
+Runtime: 12 ms, faster than 35% of C online submissions for Intersection of Two Arrays II.
+Memory Usage: 7.2 MB, less than 10% of C online submissions for Intersection of Two Arrays II.
 */
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
 int* intersect(int* nums1, int nums1Size, int* nums2, int nums2Size, int* returnSize){
