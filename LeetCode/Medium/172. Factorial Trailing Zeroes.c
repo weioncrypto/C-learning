@@ -20,7 +20,7 @@ int trailingZeroes(int n){
 }
 
 
-
+/*
 Runtime: 0 ms, faster than 100.00% of C online submissions for Factorial Trailing Zeroes.
 Memory Usage: 5.5 MB, less than 64.00% of C online submissions for Factorial Trailing Zeroes.
 */
